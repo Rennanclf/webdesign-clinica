@@ -1,0 +1,539 @@
+/* CSS específico para a página de Serviços */
+
+/* Hero Serviços */
+.hero-servicos {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    padding: 140px 0 80px;
+    text-align: center;
+}
+
+.hero-servicos-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-servicos-content p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Serviços Principais */
+.servicos-principais {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.servico-destaque {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+    padding: 40px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.servico-destaque.reverse {
+    background: linear-gradient(135deg, #fff5f5 0%, #fef2f2 100%);
+}
+
+.servico-destaque.reverse .servico-content {
+    order: 2;
+}
+
+.servico-destaque.reverse .servico-image {
+    order: 1;
+}
+
+.servico-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.servico-content h2 {
+    color: #2c5aa0;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.servico-content > p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.servico-detalhes h4 {
+    color: #2c5aa0;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.servico-detalhes ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.servico-detalhes ul li {
+    padding: 5px 0;
+    color: #666;
+    position: relative;
+    padding-left: 25px;
+}
+
+.servico-detalhes ul li::before {
+    content: "✓";
+    color: #28a745;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.preco {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.servico-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #2c5aa0, #1e4080);
+}
+
+/* Especialidades */
+.especialidades {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.especialidades h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c5aa0;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.especialidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.especialidade-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.especialidade-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(44, 90, 160, 0.15);
+}
+
+.esp-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.especialidade-card h3 {
+    color: #2c5aa0;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.especialidade-card > p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.especialidade-card ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.especialidade-card ul li {
+    padding: 3px 0;
+    color: #666;
+    font-size: 0.95rem;
+    position: relative;
+    padding-left: 15px;
+}
+
+.especialidade-card ul li::before {
+    content: "•";
+    color: #28a745;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.preco-esp {
+    background: #2c5aa0;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+/* Planos e Convênios */
+.planos-convenios {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.planos-convenios h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c5aa0;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.planos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.plano-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    border: 2px solid #f0f0f0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.plano-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(44, 90, 160, 0.15);
+}
+
+.plano-card.destaque {
+    border-color: #28a745;
+    transform: scale(1.05);
+}
+
+.plano-badge {
+    background: #28a745;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.plano-card h3 {
+    color: #2c5aa0;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.plano-preco {
+    margin-bottom: 25px;
+}
+
+.preco-valor {
+    color: #28a745;
+    font-size: 2.2rem;
+    font-weight: 700;
+    display: block;
+}
+
+.preco-periodo {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.plano-card ul {
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.plano-card ul li {
+    padding: 5px 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.btn-plano {
+    background: #2c5aa0;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-plano:hover {
+    background: #1e4080;
+    transform: translateY(-2px);
+}
+
+.convenios-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.convenio-item {
+    background: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.convenio-info {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Tecnologia */
+.tecnologia {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.tecnologia h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c5aa0;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.tecnologia-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.tech-item {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(44, 90, 160, 0.12);
+}
+
+.tech-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.tech-item h4 {
+    color: #2c5aa0;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.tech-item p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* FAQ */
+.faq-servicos {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.faq-servicos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c5aa0;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.faq-item {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid #2c5aa0;
+}
+
+.faq-item h4 {
+    color: #2c5aa0;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.faq-item p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Call to Action */
+.cta-servicos {
+    padding: 80px 0;
+    background: #2c5aa0;
+    color: white;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-whatsapp {
+    background: #25d366;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background: #128c7e;
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+    .servico-destaque {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .servico-destaque.reverse .servico-content,
+    .servico-destaque.reverse .servico-image {
+        order: unset;
+    }
+    
+    .planos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .plano-card.destaque {
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-servicos-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-servicos-content p {
+        font-size: 1.1rem;
+    }
+    
+    .servico-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .especialidades h2,
+    .planos-convenios h2,
+    .tecnologia h2,
+    .faq-servicos h2,
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .especialidades-grid,
+    .tech-grid,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .convenios-list {
+        grid-template-columns: 1fr;
+    }
+}

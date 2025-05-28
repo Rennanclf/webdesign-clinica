@@ -1,0 +1,65 @@
+/* sobre.css */
+
+.sobre-intro {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.sobre-intro h1 {
+  font-size: 2.6rem;
+  color: #004080;
+  margin-bottom: 12px;
+}
+
+.sobre-intro p {
+  font-size: 1.15rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.sobre-missao {
+  padding: 40px 20px;
+}
+
+.sobre-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sobre-cards .card {
+  background: #f2f9ff;
+  padding: 2rem;
+  border-radius: 8px;
+  flex: 1 1 240px;
+  max-width: 280px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.sobre-cards .card:hover {
+  transform: translateY(-5px);
+}
+
+.sobre-cards h3 {
+  font-size: 1.3rem;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.sobre-cards p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+  .sobre-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,27 @@
+.solucoes-main {
+  padding: 2rem 0;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.solucoes-main h1 {
+  color: #00695c;
+  margin-bottom: 1rem;
+}
+
+.solucoes-main p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.lista-solucoes {
+  list-style: inside disc;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}

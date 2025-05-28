@@ -1,0 +1,397 @@
+/* ========================================
+   FOOTER CLÍNICA SORRIRBEM - VERSÃO LIMPA
+   ======================================== */
+
+/* Base do Footer */
+.footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #ffffff;
+    padding: 70px 0 30px;
+    margin-top: 60px;
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #2c5aa0, #1e4080, #28a745);
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ========================================
+   CONTEÚDO PRINCIPAL DO FOOTER
+   ======================================== */
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+/* ========================================
+   SEÇÃO PRINCIPAL (LOGO + REDES SOCIAIS)
+   ======================================== */
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.footer-logo-icon {
+    font-size: 2.8rem;
+    background: linear-gradient(135deg, #2c5aa0, #1e4080);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 8px 20px rgba(44, 90, 160, 0.3);
+}
+
+.footer-brand h3 {
+    color: #2c5aa0;
+    font-size: 1.6rem;
+    margin: 0 0 12px 0;
+    font-weight: 700;
+}
+
+.footer-brand p {
+    color: #cccccc;
+    line-height: 1.7;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Redes Sociais */
+.social-section h4 {
+    color: #2c5aa0;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-link {
+    color: #cccccc;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.social-link:hover {
+    color: #2c5aa0;
+    background: rgba(44, 90, 160, 0.1);
+    border-color: rgba(44, 90, 160, 0.2);
+    transform: translateX(4px);
+}
+
+.social-icon {
+    font-size: 1.2rem;
+}
+
+.social-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* ========================================
+   SEÇÕES DO FOOTER
+   ======================================== */
+
+.footer-section h4 {
+    color: #2c5aa0;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer-section h4::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, #2c5aa0, #1e4080);
+}
+
+/* Menu de Links */
+.footer-menu,
+.footer-services {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu li,
+.footer-services li {
+    margin-bottom: 12px;
+}
+
+.footer-menu a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 4px 0;
+}
+
+.footer-menu a:hover {
+    color: #2c5aa0;
+    transform: translateX(6px);
+}
+
+.footer-services li {
+    color: #cccccc;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 4px 0;
+    border-left: 2px solid transparent;
+    padding-left: 8px;
+    transition: all 0.3s ease;
+}
+
+.footer-services li:hover {
+    border-left-color: #2c5aa0;
+    color: #ffffff;
+}
+
+/* ========================================
+   INFORMAÇÕES DE CONTATO
+   ======================================== */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.contact-icon {
+    font-size: 1.3rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.contact-details strong {
+    color: #2c5aa0;
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.contact-details p {
+    color: #cccccc;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* ========================================
+   RODAPÉ INFERIOR
+   ======================================== */
+
+.footer-separator {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #444444, transparent);
+    margin: 20px 0 30px;
+}
+
+.footer-credits {
+    text-align: center;
+    color: #999999;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+}
+
+.developer {
+    font-size: 0.85rem;
+    margin: 0;
+    font-style: italic;
+}
+
+.developer:hover {
+    color: #2c5aa0;
+    transition: color 0.3s ease;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+/* Tablet */
+@media (max-width: 968px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    
+    .footer-main {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .social-links {
+        flex-direction: row;
+        gap: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .footer {
+        padding: 50px 0 25px;
+        margin-top: 40px;
+    }
+    
+    .footer .container {
+        padding: 0 16px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+    
+    .footer-main {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+    
+    .footer-logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .social-links {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .contact-item {
+        justify-content: center;
+        text-align: left;
+    }
+    
+    .footer-section h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
+    .footer .container {
+        padding: 0 15px;
+    }
+    
+    .footer-content {
+        gap: 30px;
+    }
+    
+    .footer-logo-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 2.4rem;
+    }
+    
+    .footer-brand h3 {
+        font-size: 1.4rem;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+}
+
+/* ========================================
+   ANIMAÇÕES E EFEITOS
+   ======================================== */
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-section {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.footer-section:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.footer-section:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.footer-section:nth-child(4) {
+    animation-delay: 0.3s;
+}

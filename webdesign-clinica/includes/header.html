@@ -1,0 +1,56 @@
+<!-- Header da Clínica SorrirBem -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <div class="logo-icon">🦷</div>
+            <div class="logo-text">
+                <h1>SorrirBem</h1>
+                <span>Odontologia</span>
+            </div>
+        </div>
+        
+        
+        
+        <div class="header-contact">
+            <span class="phone">📞 (83) 3218-4567</span>
+        </div>
+        
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<script>
+function toggleMenu() {
+    const nav = document.getElementById('mainNav');
+    const toggle = document.querySelector('.menu-toggle');
+    
+    nav.classList.toggle('nav-open');
+    toggle.classList.toggle('menu-active');
+}
+
+// Fechar menu ao clicar em um link
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav a');
+    const nav = document.getElementById('mainNav');
+    const toggle = document.querySelector('.menu-toggle');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            nav.classList.remove('nav-open');
+            toggle.classList.remove('menu-active');
+        });
+    });
+    
+    // Fechar menu ao redimensionar
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            nav.classList.remove('nav-open');
+            toggle.classList.remove('menu-active');
+        }
+    });
+});
+</script>

@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="logo-link">
+      <img src="../assets/images/logo/odontovida-logo.png" alt="OdontoVida Logo" class="logo" />
+    </a>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="../index.html" class="nav-link">Início</a></li>
+        <li><a href="./servicos.html" class="nav-link">Serviços</a></li>
+        <li><a href="./sobre.html" class="nav-link">Sobre</a></li>
+        <li><a href="./solucoes.html" class="nav-link">Soluções</a></li>
+        <li><a href="./contato.html" class="nav-link">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

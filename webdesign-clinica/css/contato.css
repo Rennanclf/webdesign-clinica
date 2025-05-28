@@ -1,0 +1,519 @@
+/* CSS específico para a página de Contato */
+
+/* Hero Contato */
+.hero-contato {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    color: white;
+    padding: 140px 0 80px;
+    text-align: center;
+}
+
+.hero-contato-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-contato-content p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Informações de Contato */
+.info-contato {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.contato-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.contato-info h2,
+.form-contato h2 {
+    color: #2c5aa0;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    border-left: 4px solid #2c5aa0;
+}
+
+.info-icon {
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.info-content h4 {
+    color: #2c5aa0;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.info-content p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.info-content small {
+    color: #666;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.redes-sociais {
+    margin-top: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+}
+
+.redes-sociais h4 {
+    color: #2c5aa0;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    color: #2c5aa0;
+    text-decoration: none;
+    padding: 8px 15px;
+    background: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: 1px solid #2c5aa0;
+}
+
+.social-link:hover {
+    background: #2c5aa0;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Formulário de Contato */
+.form-contato {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2c5aa0;
+    box-shadow: 0 0 0 3px rgba(44, 90, 160, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.btn-enviar {
+    background: linear-gradient(135deg, #2c5aa0, #1e4080);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-enviar:hover {
+    background: linear-gradient(135deg, #1e4080, #2c5aa0);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(44, 90, 160, 0.3);
+}
+
+/* Mapa e Localização */
+.mapa-localizacao {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.mapa-localizacao h2 {
+    text-align: center;
+    color: #2c5aa0;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.mapa-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.mapa-info h3 {
+    color: #2c5aa0;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.endereco-completo {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border-left: 4px solid #2c5aa0;
+}
+
+.endereco-completo p {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.referencias,
+.transporte,
+.estacionamento {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid #28a745;
+}
+
+.referencias h4,
+.transporte h4,
+.estacionamento h4 {
+    color: #2c5aa0;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.referencias ul {
+    list-style: none;
+    color: #666;
+}
+
+.referencias ul li {
+    margin-bottom: 5px;
+}
+
+.transporte p,
+.estacionamento p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.mapa-embed {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.mapa-placeholder {
+    padding: 60px 30px;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.mapa-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.mapa-placeholder h4 {
+    color: #2c5aa0;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.mapa-placeholder p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.btn-mapa {
+    background: #dc3545;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-mapa:hover {
+    background: #c82333;
+    transform: translateY(-2px);
+}
+
+/* Agendamento Rápido */
+.agendamento-rapido {
+    padding: 80px 0;
+    background: #2c5aa0;
+    color: white;
+    text-align: center;
+}
+
+.agendamento-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.agendamento-content p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    opacity: 0.9;
+}
+
+.agendamento-opcoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.opcao-agendamento {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.opcao-agendamento:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.opcao-agendamento.destaque {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.opcao-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.opcao-agendamento h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.opcao-agendamento p {
+    opacity: 0.9;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.btn-opcao {
+    background: white;
+    color: #2c5aa0;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-opcao:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-opcao.whatsapp {
+    background: #25d366;
+    color: white;
+}
+
+.btn-opcao.whatsapp:hover {
+    background: #128c7e;
+}
+
+.btn-opcao.emergencia {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-opcao.emergencia:hover {
+    background: #c82333;
+}
+
+/* FAQ Contato */
+.faq-contato {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.faq-contato h2 {
+    text-align: center;
+    color: #2c5aa0;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.faq-item {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid #2c5aa0;
+}
+
+.faq-item h4 {
+    color: #2c5aa0;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.faq-item p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+    .contato-grid,
+    .mapa-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .agendamento-opcoes {
+        grid-template-columns: 1fr;
+    }
+    
+    .opcao-agendamento.destaque {
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-contato-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-contato-content p {
+        font-size: 1.1rem;
+    }
+    
+    .contato-info h2,
+    .form-contato h2,
+    .mapa-localizacao h2,
+    .agendamento-content h2,
+    .faq-contato h2 {
+        font-size: 2rem;
+    }
+    
+    .form-contato {
+        padding: 25px;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}

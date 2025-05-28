@@ -1,0 +1,540 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.conteudo-site {
+    margin-top: 80px;
+}
+
+/* BOTÕES 3D COM PROFUNDIDADE REAL */
+.btn-3d {
+    position: relative;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 12px;
+    transition: all 0.15s ease;
+}
+
+.btn-conteudo {
+    display: block;
+    padding: 18px 36px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.15s ease;
+    position: relative;
+    z-index: 2;
+}
+
+/* Botão Azul Principal */
+.btn-azul {
+    background: linear-gradient(180deg, #3b6bc4 0%, #2c5aa0 100%);
+    box-shadow: 
+        0 8px 0 #1e4080,
+        0 12px 25px rgba(44, 90, 160, 0.4);
+}
+
+.btn-azul .btn-conteudo {
+    background: linear-gradient(180deg, #4f7dd9 0%, #2c5aa0 100%);
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn-azul:hover {
+    transform: translateY(2px);
+    box-shadow: 
+        0 6px 0 #1e4080,
+        0 8px 20px rgba(44, 90, 160, 0.5);
+}
+
+.btn-azul:active {
+    transform: translateY(6px);
+    box-shadow: 
+        0 2px 0 #1e4080,
+        0 4px 10px rgba(44, 90, 160, 0.6);
+}
+
+/* Botão Branco Secundário */
+.btn-branco {
+    background: linear-gradient(180deg, #e9ecef 0%, #dee2e6 100%);
+    box-shadow: 
+        0 8px 0 #adb5bd,
+        0 12px 25px rgba(173, 181, 189, 0.4);
+}
+
+.btn-branco .btn-conteudo {
+    background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+    color: #2c5aa0;
+    border: 2px solid #2c5aa0;
+    font-weight: 700;
+}
+
+.btn-branco:hover {
+    transform: translateY(2px);
+    box-shadow: 
+        0 6px 0 #adb5bd,
+        0 8px 20px rgba(173, 181, 189, 0.5);
+}
+
+.btn-branco:active {
+    transform: translateY(6px);
+    box-shadow: 
+        0 2px 0 #adb5bd,
+        0 4px 10px rgba(173, 181, 189, 0.6);
+}
+
+/* Botão Verde Para Contato */
+.btn-verde {
+    background: linear-gradient(180deg, #32d74b 0%, #28a745 100%);
+    box-shadow: 
+        0 8px 0 #1e7e34,
+        0 12px 25px rgba(40, 167, 69, 0.4);
+}
+
+.btn-verde .btn-conteudo {
+    background: linear-gradient(180deg, #48df64 0%, #28a745 100%);
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn-verde:hover {
+    transform: translateY(2px);
+    box-shadow: 
+        0 6px 0 #1e7e34,
+        0 8px 20px rgba(40, 167, 69, 0.5);
+}
+
+.btn-verde:active {
+    transform: translateY(6px);
+    box-shadow: 
+        0 2px 0 #1e7e34,
+        0 4px 10px rgba(40, 167, 69, 0.6);
+}
+
+/* Botão Outline com Profundidade */
+.btn-outline {
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+    box-shadow: 
+        0 6px 0 #dee2e6,
+        0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline .btn-conteudo {
+    background: transparent;
+    color: #2c5aa0;
+    border: 2px solid #2c5aa0;
+    font-weight: 600;
+    padding: 14px 32px;
+}
+
+.btn-outline:hover {
+    transform: translateY(2px);
+    box-shadow: 
+        0 4px 0 #dee2e6,
+        0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline:hover .btn-conteudo {
+    background: #2c5aa0;
+    color: white;
+}
+
+.btn-outline:active {
+    transform: translateY(4px);
+    box-shadow: 
+        0 2px 0 #dee2e6,
+        0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Layout do banner */
+.secao-banner {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 100px 0 80px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    min-height: 400px;
+}
+
+.banner-texto h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2c5aa0;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.banner-texto p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.grupo-botoes {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.banner-imagem img {
+    width: 100%;
+    max-width: 500px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Seção tratamentos */
+.secao-tratamentos {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.secao-tratamentos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c5aa0;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.texto-secao {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-tratamentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-bottom: 50px;
+}
+
+.card-tratamento {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.card-tratamento:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(44, 90, 160, 0.15);
+}
+
+.icone-grande {
+    font-size: 3.2rem;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.card-tratamento h3 {
+    color: #2c5aa0;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.card-tratamento p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.centro-botao {
+    text-align: center;
+}
+
+/* Seção diferenciais */
+.secao-diferenciais {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.diferenciais-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.diferenciais-texto h2 {
+    font-size: 2.3rem;
+    color: #2c5aa0;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.lista-vantagens {
+    margin-bottom: 40px;
+}
+
+.vantagem-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.check-verde {
+    color: #28a745;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 4px;
+    flex-shrink: 0;
+    background: rgba(40, 167, 69, 0.1);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vantagem-item h4 {
+    color: #2c5aa0;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.vantagem-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.diferenciais-imagem img {
+    width: 100%;
+    max-width: 480px;
+    height: 320px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Seção contato */
+.secao-contato-rapido {
+    padding: 80px 0;
+    background: #2c5aa0;
+    color: white;
+}
+
+.contato-wrapper {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contato-wrapper h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.contato-wrapper > p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    opacity: 0.9;
+}
+
+.grid-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    margin-bottom: 50px;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.icone-contato {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.card-info strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card-info p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+    .conteudo-site {
+        margin-top: 70px;
+    }
+    
+    .banner-layout,
+    .diferenciais-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+    
+    .banner-texto h1 {
+        font-size: 2.6rem;
+    }
+    
+    .secao-tratamentos h2,
+    .contato-wrapper h2 {
+        font-size: 2.2rem;
+    }
+    
+    .diferenciais-texto h2 {
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .conteudo-site {
+        margin-top: 60px;
+    }
+    
+    .secao-banner {
+        padding: 60px 0;
+        min-height: auto;
+    }
+    
+    .banner-texto h1 {
+        font-size: 2.2rem;
+    }
+    
+    .banner-texto p {
+        font-size: 1.1rem;
+    }
+    
+    .grupo-botoes {
+        justify-content: center;
+        margin-top: 40px;
+    }
+    
+    .banner-imagem img,
+    .diferenciais-imagem img {
+        height: 260px;
+    }
+    
+    .secao-tratamentos,
+    .secao-diferenciais,
+    .secao-contato-rapido {
+        padding: 60px 0;
+    }
+    
+    .secao-tratamentos h2,
+    .contato-wrapper h2 {
+        font-size: 2rem;
+    }
+    
+    .diferenciais-texto h2 {
+        font-size: 1.9rem;
+    }
+    
+    .grid-info {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .card-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .banner-texto h1 {
+        font-size: 1.9rem;
+    }
+    
+    .banner-imagem img,
+    .diferenciais-imagem img {
+        height: 220px;
+    }
+    
+    .secao-tratamentos h2,
+    .contato-wrapper h2 {
+        font-size: 1.8rem;
+    }
+    
+    .card-tratamento {
+        padding: 30px 24px;
+    }
+    
+    .grupo-botoes {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .btn-3d {
+        width: 100%;
+    }
+}

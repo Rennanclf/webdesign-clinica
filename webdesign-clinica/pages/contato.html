@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em Contato - Clínica SorrirBem João Pessoa</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/contato.css">
+</head>
+<body>
+    <!-- Incluir Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Contato -->
+    <section class="hero-contato">
+        <div class="container">
+            <div class="hero-contato-content">
+                <h1>Entre em Contato</h1>
+                <p>Estamos prontos para cuidar do seu sorriso. Agende sua consulta ou tire suas dúvidas conosco</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informações de Contato -->
+    <section class="info-contato">
+        <div class="container">
+            <div class="contato-grid">
+                <div class="contato-info">
+                    <h2>Informações de Contato</h2>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">🕒</div>
+                        <div class="info-content">
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Sexta: 8h às 18h<br>
+                            Sábado: 8h às 12h<br>
+                            Domingo: Fechado</p>
+                            <small>Atendimento de urgência 24h</small>
+                        </div>
+                    </div>
+
+                    <div class="redes-sociais">
+                        <h4>Redes Sociais</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">📘 Facebook</a>
+                            <a href="#" class="social-link">📷 Instagram</a>
+                            <a href="https://wa.me/5583998765432" class="social-link">💬 WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário de Contato -->
+                <div class="form-contato">
+                    <h2>Envie sua Mensagem</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone *</label>
+                                <input type="tel" id="telefone" name="telefone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <select id="assunto" name="assunto">
+                                <option value="">Selecione o assunto</option>
+                                <option value="agendamento">Agendamento de Consulta</option>
+                                <option value="orcamento">Solicitação de Orçamento</option>
+                                <option value="emergencia">Emergência Odontológica</option>
+                                <option value="informacoes">Informações sobre Tratamentos</option>
+                                <option value="convenio">Convênios e Planos</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servico">Serviço de Interesse</label>
+                            <select id="servico" name="servico">
+                                <option value="">Selecione o serviço</option>
+                                <option value="clinica-geral">Clínica Geral</option>
+                                <option value="estetica">Estética Dental</option>
+                                <option value="ortodontia">Ortodontia</option>
+                                <option value="implantodontia">Implantodontia</option>
+                                <option value="endodontia">Endodontia</option>
+                                <option value="periodontia">Periodontia</option>
+                                <option value="odontopediatria">Odontopediatria</option>
+                                <option value="cirurgia">Cirurgia Oral</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Descreva sua necessidade ou dúvida..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="aceito" name="aceito" required>
+                                <span class="checkmark"></span>
+                                Aceito receber informações sobre tratamentos e promoções por e-mail e WhatsApp
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa e Localização -->
+    <section class="mapa-localizacao">
+        <div class="container">
+            <h2>Nossa Localização</h2>
+            <div class="mapa-content">
+                <div class="mapa-info">
+                    <h3>Como Chegar</h3>
+                    <div class="endereco-completo">
+                        <p><strong>Endereço:</strong> Rua das Trincheiras, 123 - Centro</p>
+                        <p><strong>Cidade:</strong> João Pessoa - PB</p>
+                        <p><strong>CEP:</strong> 58010-000</p>
+                    </div>
+                    
+                    <div class="referencias">
+                        <h4>Pontos de Referência:</h4>
+                        <ul>
+                            <li>• Próximo ao Mercado Central</li>
+                            <li>• A 200m da Estação Rodoviária</li>
+                            <li>• Em frente à Praça da Independência</li>
+                            <li>• Ao lado do Banco do Brasil</li>
+                        </ul>
+                    </div>
+
+                    <div class="transporte">
+                        <h4>Transporte Público:</h4>
+                        <p>Linhas de ônibus: 101, 202, 305, 410</p>
+                        <p>Ponto de ônibus a 50m da clínica</p>
+                    </div>
+
+                    <div class="estacionamento">
+                        <h4>Estacionamento:</h4>
+                        <p>• Estacionamento próprio gratuito</p>
+                        <p>• 15 vagas disponíveis</p>
+                        <p>• Acesso para pessoas com deficiência</p>
+                    </div>
+                </div>
+
+                <div class="mapa-embed">
+                    <div class="mapa-placeholder">
+                        <div class="mapa-icon">🗺️</div>
+                        <h4>Mapa Interativo</h4>
+                        <p>Rua das Trincheiras, 123<br>Centro - João Pessoa/PB</p>
+                        <a href="https://maps.google.com/?q=Rua+das+Trincheiras+123+Centro+João+Pessoa+PB" target="_blank" class="btn-mapa">Abrir no Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento Rápido -->
+    <section class="agendamento-rapido">
+        <div class="container">
+            <div class="agendamento-content">
+                <h2>Agendamento Rápido</h2>
+                <p>Prefere agendar por telefone ou WhatsApp?</p>
+                
+                <div class="agendamento-opcoes">
+                    <div class="opcao-agendamento">
+                        <div class="opcao-icon">📞</div>
+                        <h4>Ligar Agora</h4>
+                        <p>Atendimento imediato durante o horário comercial</p>
+                        <a href="tel:+558332184567" class="btn-opcao">Ligar: (83) 3218-4567</a>
+                    </div>
+
+                    <div class="opcao-agendamento destaque">
+                        <div class="opcao-icon">💬</div>
+                        <h4>WhatsApp</h4>
+                        <p>Resposta rápida e agendamento facilitado</p>
+                        <a href="https://wa.me/5583998765432?text=Olá! Gostaria de agendar uma consulta." class="btn-opcao whatsapp" target="_blank">Chamar no WhatsApp</a>
+                    </div>
+
+                    <div class="opcao-agendamento">
+                        <div class="opcao-icon">🚨</div>
+                        <h4>Emergência</h4>
+                        <p>Atendimento de urgência 24 horas</p>
+                        <a href="https://wa.me/5583998765432?text=EMERGÊNCIA: Preciso de atendimento urgente!" class="btn-opcao emergencia" target="_blank">WhatsApp Emergência</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Contato -->
+    <section class="faq-contato">
+        <div class="container">
+            <h2>Dúvidas Frequentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Como agendar minha primeira consulta?</h4>
+                    <p>Você pode agendar pelo telefone (83) 3218-4567, WhatsApp (83) 99876-5432 ou preenchendo o formulário acima. A primeira consulta inclui avaliação completa.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Qual documentação preciso levar?</h4>
+                    <p>Traga RG, CPF, comprovante de residência e carteirinha do convênio (se tiver). Se possível, leve exames anteriores e receitas de medicamentos em uso.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Vocês atendem no sábado?</h4>
+                    <p>Sim, atendemos aos sábados das 8h às 12h. O agendamento pode ser feito pelos mesmos canais de comunicação.</p>  
+                </div>
+
+                <div class="faq-item">
+                    <h4>Como funciona o atendimento de emergência?</h4>
+                    <p>Para emergências, entre em contato pelo WhatsApp ou telefone. Temos atendimento 24h para casos urgentes com cobrança diferenciada.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Posso remarcar minha consulta?</h4>
+                    <p>Sim, pedimos que remarque com pelo menos 24 horas de antecedência pelos nossos canais de contato para não gerar taxa de cancelamento.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Vocês fazem orçamento online?</h4>
+                    <p>Fazemos uma pré-avaliação online, mas o orçamento definitivo requer consulta presencial para exame clínico detalhado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Incluir Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Carregar header e footer
+        fetch('../includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        fetch('../includes/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+
+        // Formulário de contato
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulação de envio (em um site real, você conectaria com um backend)
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const telefone = document.getElementById('telefone').value;
+            const assunto = document.getElementById('assunto').value;
+            const mensagem = document.getElementById('mensagem').value;
+            
+            // Validação básica
+            if (!nome || !email || !telefone || !mensagem) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+            
+            // Simular envio bem-sucedido
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            this.reset();
+        });
+
+        // Máscara para telefone
+        document.getElementById('telefone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+            value = value.replace(/(\d)(\d{4})$/, '$1-$2');
+            e.target.value = value;
+        });
+    </script>
+</body>
+</html>info-icon">📍</div>
+                        <div class="info-content">
+                            <h4>Endereço</h4>
+                            <p>Rua das Trincheiras, 123<br>
+                            Centro - João Pessoa/PB<br>
+                            CEP: 58010-000</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h4>Telefone</h4>
+                            <p>(83) 3218-4567</p>
+                            <small>Ligações e chamadas normais</small>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div class="info-content">
+                            <h4>WhatsApp</h4>
+                            <p>(83) 99876-5432</p>
+                            <small>Mensagens e chamadas</small>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h4>E-mail</h4>
+                            <p>contato@sorrirbem.com.br</p>
+                            <small>Resposta em até 24 horas</small>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="
